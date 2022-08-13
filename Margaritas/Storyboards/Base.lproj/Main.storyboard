@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="71s-tA-YUU">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Margaritas-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MargaritasTableViewController" customModule="Margaritas" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Tx5-Ec-vTA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="detailsMargaritaCell" rowHeight="110" id="IHD-ge-eMf" customClass="CustomTableViewCell" customModule="Margaritas" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="320" height="110"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IHD-ge-eMf" id="omx-ri-da5">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2mn-NV-BAH">
+                                            <rect key="frame" x="16" y="11" width="80" height="88"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="Dq7-Yi-AlT"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NhZ-9J-iX6">
+                                            <rect key="frame" x="149" y="25" width="125" height="60"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="NhZ-9J-iX6" secondAttribute="trailing" constant="30" id="4bY-BI-n69"/>
+                                        <constraint firstItem="NhZ-9J-iX6" firstAttribute="leading" secondItem="2mn-NV-BAH" secondAttribute="trailing" constant="53" id="DxW-5T-fRg"/>
+                                        <constraint firstItem="2mn-NV-BAH" firstAttribute="top" secondItem="omx-ri-da5" secondAttribute="topMargin" id="EJF-U2-xa8"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="NhZ-9J-iX6" secondAttribute="bottom" constant="14" id="Xgb-ZG-Abs"/>
+                                        <constraint firstItem="2mn-NV-BAH" firstAttribute="bottom" secondItem="omx-ri-da5" secondAttribute="bottomMargin" id="jlI-ej-cKj"/>
+                                        <constraint firstItem="NhZ-9J-iX6" firstAttribute="top" secondItem="omx-ri-da5" secondAttribute="topMargin" constant="14" id="kjH-Hf-Ovp"/>
+                                        <constraint firstItem="2mn-NV-BAH" firstAttribute="leading" secondItem="omx-ri-da5" secondAttribute="leadingMargin" id="zrx-hM-TPo"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ritaImage" destination="2mn-NV-BAH" id="fJP-Ut-187"/>
+                                    <outlet property="ritaName" destination="NhZ-9J-iX6" id="4Oq-za-3Wq"/>
+                                    <segue destination="5Rt-Rc-k1L" kind="show" id="nJH-kV-Ofy"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Margaritas" id="Ohi-kN-rmc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="943.125" y="97.183098591549296"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="kyO-LZ-7XP">
+            <objects>
+                <viewController id="5Rt-Rc-k1L" customClass="DetailsViewController" customModule="Margaritas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3xe-Kb-Sqd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NBb-jE-AXh">
+                                <rect key="frame" x="80" y="65" width="160" height="164"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="164" id="ucN-eq-hrh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJy-ZV-4CD">
+                                <rect key="frame" x="20" y="272" width="280" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="MVL-Jh-huf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqI-Pi-Qe6">
+                                <rect key="frame" x="20" y="414" width="280" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="6fV-x2-JNZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Als-Tm-YNP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Als-Tm-YNP" firstAttribute="trailing" secondItem="hJy-ZV-4CD" secondAttribute="trailing" constant="20" id="4GY-mv-3yf"/>
+                            <constraint firstItem="hJy-ZV-4CD" firstAttribute="leading" secondItem="Als-Tm-YNP" secondAttribute="leading" constant="20" id="6px-rM-aWv"/>
+                            <constraint firstItem="GqI-Pi-Qe6" firstAttribute="leading" secondItem="Als-Tm-YNP" secondAttribute="leading" constant="20" id="HMr-Vn-a1t"/>
+                            <constraint firstItem="Als-Tm-YNP" firstAttribute="bottom" secondItem="GqI-Pi-Qe6" secondAttribute="bottom" constant="39" id="Hum-xu-HOh"/>
+                            <constraint firstItem="GqI-Pi-Qe6" firstAttribute="top" secondItem="hJy-ZV-4CD" secondAttribute="bottom" constant="27" id="JCM-hm-4Vm"/>
+                            <constraint firstItem="NBb-jE-AXh" firstAttribute="top" secondItem="3xe-Kb-Sqd" secondAttribute="top" constant="65" id="Ttz-cF-9vw"/>
+                            <constraint firstItem="NBb-jE-AXh" firstAttribute="leading" secondItem="Als-Tm-YNP" secondAttribute="leading" constant="80" id="hFM-65-eBc"/>
+                            <constraint firstItem="Als-Tm-YNP" firstAttribute="trailing" secondItem="GqI-Pi-Qe6" secondAttribute="trailing" constant="20" id="hJo-4l-gjK"/>
+                            <constraint firstItem="Als-Tm-YNP" firstAttribute="trailing" secondItem="NBb-jE-AXh" secondAttribute="trailing" constant="80" id="sp4-vR-4V9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tKL-Wd-xRu"/>
+                    <connections>
+                        <outlet property="margaritaImage" destination="NBb-jE-AXh" id="eIU-SN-fm5"/>
+                        <outlet property="margaritaIngredients" destination="hJy-ZV-4CD" id="oMu-px-NdL"/>
+                        <outlet property="margaritaInstructions" destination="GqI-Pi-Qe6" id="CL0-58-K4F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jTb-JZ-HmX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1695" y="97.183098591549296"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KJz-pA-0lI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="71s-tA-YUU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="rW9-ob-UuI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Hd4-8U-y7b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I9G-ae-k71" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		FBD89AD328A505780006354F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD89AD228A505780006354F /* AppDelegate.swift */; };
 		FBD89AD528A505780006354F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD89AD428A505780006354F /* SceneDelegate.swift */; };
-		FBD89AD728A505780006354F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD89AD628A505780006354F /* ViewController.swift */; };
 		FBD89ADA28A505780006354F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD89AD828A505780006354F /* Main.storyboard */; };
 		FBD89ADC28A505790006354F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD89ADB28A505790006354F /* Assets.xcassets */; };
 		FBD89ADF28A505790006354F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD89ADD28A505790006354F /* LaunchScreen.storyboard */; };
+		FBD89AE728A506BD0006354F /* Margarita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD89AE628A506BD0006354F /* Margarita.swift */; };
+		FBD89AE928A50B7A0006354F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD89AE828A50B7A0006354F /* NetworkManager.swift */; };
+		FBD89AED28A510670006354F /* MargaritasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD89AEC28A510670006354F /* MargaritasTableViewController.swift */; };
+		FBD89AEF28A5247F0006354F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD89AEE28A5247F0006354F /* DetailsViewController.swift */; };
+		FBD89AF528A5E2E10006354F /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD89AF428A5E2E10006354F /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FBD89ACF28A505780006354F /* Margaritas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Margaritas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD89AD228A505780006354F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD89AD428A505780006354F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FBD89AD628A505780006354F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FBD89AD928A505780006354F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBD89ADB28A505790006354F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBD89ADE28A505790006354F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBD89AE028A505790006354F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBD89AE628A506BD0006354F /* Margarita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Margarita.swift; sourceTree = "<group>"; };
+		FBD89AE828A50B7A0006354F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FBD89AEC28A510670006354F /* MargaritasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MargaritasTableViewController.swift; sourceTree = "<group>"; };
+		FBD89AEE28A5247F0006354F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		FBD89AF428A5E2E10006354F /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,67 @@
 		FBD89AD128A505780006354F /* Margaritas */ = {
 			isa = PBXGroup;
 			children = (
-				FBD89AD228A505780006354F /* AppDelegate.swift */,
-				FBD89AD428A505780006354F /* SceneDelegate.swift */,
-				FBD89AD628A505780006354F /* ViewController.swift */,
-				FBD89AD828A505780006354F /* Main.storyboard */,
-				FBD89ADB28A505790006354F /* Assets.xcassets */,
-				FBD89ADD28A505790006354F /* LaunchScreen.storyboard */,
-				FBD89AE028A505790006354F /* Info.plist */,
+				FBD89AF428A5E2E10006354F /* CustomTableViewCell.swift */,
+				FBD89AF028A524880006354F /* ViewControllers */,
+				FBD89AEA28A50F580006354F /* Services */,
+				FBD89AEB28A50F620006354F /* Models */,
+				FBD89AF228A524FD0006354F /* App */,
+				FBD89AF128A524EF0006354F /* Storyboards */,
+				FBD89AF328A525070006354F /* Resources */,
 			);
 			path = Margaritas;
+			sourceTree = "<group>";
+		};
+		FBD89AEA28A50F580006354F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FBD89AE828A50B7A0006354F /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FBD89AEB28A50F620006354F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FBD89AE628A506BD0006354F /* Margarita.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FBD89AF028A524880006354F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FBD89AEE28A5247F0006354F /* DetailsViewController.swift */,
+				FBD89AEC28A510670006354F /* MargaritasTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FBD89AF128A524EF0006354F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FBD89AD828A505780006354F /* Main.storyboard */,
+				FBD89ADD28A505790006354F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FBD89AF228A524FD0006354F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FBD89AD228A505780006354F /* AppDelegate.swift */,
+				FBD89AD428A505780006354F /* SceneDelegate.swift */,
+				FBD89AE028A505790006354F /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FBD89AF328A525070006354F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FBD89ADB28A505790006354F /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBD89AD728A505780006354F /* ViewController.swift in Sources */,
 				FBD89AD328A505780006354F /* AppDelegate.swift in Sources */,
+				FBD89AE928A50B7A0006354F /* NetworkManager.swift in Sources */,
+				FBD89AED28A510670006354F /* MargaritasTableViewController.swift in Sources */,
+				FBD89AF528A5E2E10006354F /* CustomTableViewCell.swift in Sources */,
+				FBD89AE728A506BD0006354F /* Margarita.swift in Sources */,
 				FBD89AD528A505780006354F /* SceneDelegate.swift in Sources */,
+				FBD89AEF28A5247F0006354F /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +353,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GYG39N7625;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Margaritas/Info.plist;
+				INFOPLIST_FILE = Margaritas/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +381,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GYG39N7625;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Margaritas/Info.plist;
+				INFOPLIST_FILE = Margaritas/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
