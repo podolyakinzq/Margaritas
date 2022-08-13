@@ -64,7 +64,7 @@
 		FBD89AD128A505780006354F /* Margaritas */ = {
 			isa = PBXGroup;
 			children = (
-				FBD89AF428A5E2E10006354F /* CustomTableViewCell.swift */,
+				FBD89AF628A784330006354F /* Views */,
 				FBD89AF028A524880006354F /* ViewControllers */,
 				FBD89AEA28A50F580006354F /* Services */,
 				FBD89AEB28A50F620006354F /* Models */,
@@ -125,6 +125,14 @@
 				FBD89ADB28A505790006354F /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FBD89AF628A784330006354F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FBD89AF428A5E2E10006354F /* CustomTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
